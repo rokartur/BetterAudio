@@ -15,16 +15,10 @@
   </a>
 </div>
 
-## Sponsors
-*You can be here!*
-
 ## Installation
 1. Download the [latest version](https://github.com/rokartur/BetterAudio/releases)
 2. Unzip the `.zip` file and move the app to `/Applications` folder.
 3. All done! You can now use BetterAudio.
-
-## Get a Plus license to unlock all features
-*info*
 
 ## Star History
 <div align="center">
