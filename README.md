@@ -15,6 +15,8 @@
   </a>
 </div>
 
+v4 coming soon
+
 ## Installation
 1. Download the [latest version](https://github.com/rokartur/BetterAudio/releases)
 2. Unzip the `.zip` file and move the app to `/Applications` folder.
