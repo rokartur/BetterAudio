@@ -1,5 +1,11 @@
 <div align="center">
-  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://github.com/user-attachments/assets/8672d769-a82c-4f7a-941e-462671638e97" width="256" height="256" align="center"/></a>
+  <a href="https://github.com/rokartur/BetterAudio/releases">
+    <picture>
+     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/8bc33d02-b588-4e30-81bb-4f043568baec" />
+     <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/f37885dd-b281-4247-acb0-471ecd32369b" />
+     <img width="256" height="256" align="center" alt="BetterAudio Logo" src="https://github.com/user-attachments/assets/f37885dd-b281-4247-acb0-471ecd32369b" />
+    </picture>
+  </a>  
   <h1>BetterAudio</h1>
   <p>
   Revolutionize audio control with per-app volume adjustment, system-wide device management for input/output, customizable media keys, menu bar access, floating notifications and configurable shortcuts.
