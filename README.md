@@ -8,7 +8,7 @@
   </a>  
   <h1>BetterAudio</h1>
   <p>
-  Revolutionize audio control with per-app volume adjustment, system-wide device management for input/output, customizable media keys, menu bar access, floating notifications and configurable shortcuts.
+    v4 coming soon
   </p>
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=white" alt="downloads"/>
@@ -21,7 +21,7 @@
   </a>
 </div>
 
-v4 coming soon
+
 
 ## Installation
 1. Download the [latest version](https://github.com/rokartur/BetterAudio/releases)
