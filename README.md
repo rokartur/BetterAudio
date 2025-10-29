@@ -8,7 +8,7 @@
   </a>  
   <h1>BetterAudio</h1>
   <p>
-    v4 coming soon
+    v1 coming soon
   </p>
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=white" alt="downloads"/>
