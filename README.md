@@ -13,12 +13,12 @@
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=white" alt="downloads"/>
   </a>
-  <a href="https://github.com/rokartur/BetterAudio/releases">
+  <!-- <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=white&include_prereleases" alt="latest version"/>
   </a>
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=for-the-badge&color=white" alt="platform"/>
-  </a>
+  </a> -->
 </div>
 
 ## Star History
