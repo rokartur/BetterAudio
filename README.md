@@ -8,18 +8,76 @@
   </a>  
   <h1>BetterAudio</h1>
   <p>
-    coming soon
+    BetterAudio is a macOS menu bar app for advanced audio device management.  
+It lets you quickly switch input/output devices, control volume, see what’s currently playing, and configure global keyboard shortcuts – all from the menu bar.
   </p>
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=white" alt="downloads"/>
   </a>
-  <!-- <a href="https://github.com/rokartur/BetterAudio/releases">
+  <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=white&include_prereleases" alt="latest version"/>
   </a>
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=for-the-badge&color=white" alt="platform"/>
-  </a> -->
+  </a>
 </div>
+
+<br/>
+<br/>
+
+<div align='center'>
+  Download <a href='https://github.com/rokartur/BetterAudio/releases/latest'>latest release</a> for macOS 14.6+
+</div>
+
+## Features
+
+- **Audio device management**
+  - Quickly switch input and output devices.
+  - Show all available devices with the ability to hide/blacklist unwanted ones.
+
+- **Volume control & HUD**
+  - Change system volume directly from the menu bar.
+  - On-screen HUD / notifications when changing volume or switching devices.
+
+- **Now Playing**
+  - Now Playing widget that shows the currently playing track/media.
+  - Integration with Apple Music and Spotify via ScriptingBridge.
+
+- **Global keyboard shortcuts**
+  - System-wide shortcuts for changing volume, switching devices, and opening the panel.
+
+- **Preferences & customization**
+  - Preferences window with tabs for devices, shortcuts, license, updates, and more.
+  - Options to customize the menu bar icon, launch at login, and panel behavior.
+
+## Licensing & Support license
+
+BetterAudio is free to use with a solid set of core features.  
+If you enjoy the app and want to **support its development**, you can purchase a **[Support license](http://betteraudio.pro/buy)**.
+
+Prices:
+- 29.99 PLN
+- 7.99 EUR
+- 9.99 USD
+
+By buying a Support license you:
+
+- **Support the project directly**
+  - Help cover the cost of backend infrastructure, security work and ongoing maintenance.
+  - Let the author spend more time polishing existing features and adding new ones.
+
+- **Unlock extra premium features**
+  - **Volume keys routing** – route the system volume keys to control the output you actually care about (e.g. a specific external device instead of the default one).
+  - **Custom mute HUD position** – move the mute HUD to a custom position on your screen so it doesn’t overlap what you’re working on.
+  - **Extended HUD display time** – increase how long HUDs stay visible, making it easier to see volume / mute / device changes at a glance.
+
+  These premium options are clearly gated in the UI, so you always know what you unlock with a Support license.
+
+- **Get a trial before you decide**
+  - New users receive a time‑limited trial where premium features are fully unlocked.
+  - After the trial ends, you can keep using the free core features or support the app by activating a license.
+
+In short: **you don’t need a license to use BetterAudio**, but if you find it useful and want to help it grow, a Support license is the best way to say “thank you” — and you get some nice extra features in return.
 
 ## Star History
 <div align="center">
