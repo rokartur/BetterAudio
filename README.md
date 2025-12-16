@@ -29,6 +29,11 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
   Download <a href='https://github.com/rokartur/BetterAudio/releases/latest'>latest release</a> for macOS 14.6+
 </div>
 
+<br/>
+<br/>
+
+<img alt="ba" src="https://github.com/user-attachments/assets/4951a5c9-69f3-4b56-b95d-a73c5ee23976" />
+
 ## Features
 
 - **Audio device management**
