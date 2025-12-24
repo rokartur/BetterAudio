@@ -35,35 +35,21 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
 <img alt="ba" src="https://github.com/user-attachments/assets/4951a5c9-69f3-4b56-b95d-a73c5ee23976" />
 
 ## Features
-
-- **Audio device management**
-  - Quickly switch input and output devices.
-  - Show all available devices with the ability to hide/blacklist unwanted ones.
-
-- **Volume control & HUD**
-  - Change system volume directly from the menu bar.
-  - On-screen HUD / notifications when changing volume or switching devices.
-
-- **Now Playing**
-  - Now Playing widget that shows the currently playing track/media.
-  - Integration with Apple Music and Spotify via ScriptingBridge.
-
-- **Global keyboard shortcuts**
-  - System-wide shortcuts for changing volume, switching devices, and opening the panel.
-
-- **Preferences & customization**
-  - Preferences window with tabs for devices, shortcuts, license, updates, and more.
-  - Options to customize the menu bar icon, launch at login, and panel behavior.
+- Quickly mute by clicking on the menu bar icon.
+- Different microphone mute status icons.
+- Now Playing section that shows the currently playing track.
+- Custom notifications about track changes.
+- Force media keys to work for a selected player (Spotify, Apple Music).
+- Redirect volume keys to the selected player.
+- Quickly switch input and output devices.
+- Show all available devices with the ability to hide/blacklist unwanted ones.
+- Change system volume directly from the menu bar.
+- Custom notifications when changing volume or switching devices.
+- Customization of components displayed in the menu bar.
 
 ## Licensing & Support license
 
-BetterAudio is free to use with a solid set of core features.  
-If you enjoy the app and want to **support its development**, you can purchase a **[Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**.
-
-Prices:
-- 29.99 PLN
-- 7.99 EUR
-- 9.99 USD
+BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**. Prices: 29.99 PLN, 7.99 EUR, 9.99 USD.
 
 By buying a Support license you:
 
