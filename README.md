@@ -14,9 +14,6 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
   <a href="https://github.com/rokartur/BetterAudio/releases">
     <img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=white" alt="downloads"/>
   </a>
-  <a href="https://github.com/rokartur/BetterAudio/releases">
-    <img src="https://img.shields.io/github/stars/rokartur/BetterAudio?style=for-the-badge&color=white" alt="stars"/>
-  </a>
 </div>
 
 <br/>
