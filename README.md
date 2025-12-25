@@ -17,7 +17,6 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
 </div>
 
 <br/>
-<br/>
 
 <div align='center'>
   Download <a href='https://github.com/rokartur/BetterAudio/releases/latest'>latest release</a> for macOS 14.6+
