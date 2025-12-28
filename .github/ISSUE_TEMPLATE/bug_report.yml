@@ -32,11 +32,6 @@ body:
     id: screenshots
     attributes:
       label: Put here any screenshots or videos (optional)
-  - type: checkboxes
-    id: assign
-    attributes:
-      label: I want to work on this issue
-      options:
         - label: "Yes"
           required: false
   - type: markdown
