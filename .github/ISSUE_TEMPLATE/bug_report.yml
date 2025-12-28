@@ -32,8 +32,6 @@ body:
     id: screenshots
     attributes:
       label: Put here any screenshots or videos (optional)
-        - label: "Yes"
-          required: false
   - type: markdown
     attributes:
       value: |
