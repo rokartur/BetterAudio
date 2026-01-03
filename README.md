@@ -42,7 +42,7 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
 
 ## Licensing & Support license
 
-BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**. Prices: 29.99 PLN, 7.99 EUR, 9.99 USD.
+BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[Lifetime Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**. Prices: 29.99 PLN, 7.99 EUR, 9.99 USD.
 
 By buying a Support license you:
 
