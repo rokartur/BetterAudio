@@ -22,7 +22,7 @@
 
 <br/>
 
-<img alt="ba" src="https://github.com/user-attachments/assets/4951a5c9-69f3-4b56-b95d-a73c5ee23976" />
+<img alt="betteraudio-main" src="https://github.com/user-attachments/assets/8f1df7b5-7258-4f32-8e6e-30aabd24ae5e" />
 
 ## Features
 - Ability to dictate and quickly transcribe using local Parekeet AI models.
