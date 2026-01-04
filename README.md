@@ -26,22 +26,23 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
 <img alt="ba" src="https://github.com/user-attachments/assets/4951a5c9-69f3-4b56-b95d-a73c5ee23976" />
 
 ## Features
-- Quickly mute by clicking on the menu bar icon.
-- Different microphone mute status icons.
-- Now Playing section that shows the currently playing track and media information.
-- Custom notifications about track changes.
-- Force media keys to work for a selected player (Spotify, Apple Music).
-- Redirect volume keys to a selected player.
-- Quickly switch between input and output audio devices.
-- Show all available devices with the ability to hide or blacklist unwanted ones.
-- Priority Devices system to organize the order and number of devices on the list.
-- Detailed information view for every specific audio device.
-- Change system volume directly from the menu bar.
-- On-screen HUD notifications when adjusting volume, muting, or switching devices.
-- Custom HUD positioning and extended display duration for better visibility.
-- Global keyboard shortcuts for volume adjustment, device switching, and opening the panel.
+- Ability to dictate and quickly transcribe using local Parekeet AI models.
+- Ability to play audio on two devices at once (Audio Sharing).
+- Quick muting by clicking the icon in the menu bar.
+- Various microphone mute status icons.
+- “Now Playing” section that shows the currently playing track and media information.
+- Custom notifications for track changes.
+- Force media keys to work for the selected player (Spotify, Apple Music).
+- Redirect volume keys to the selected player.
+- Quick switching between audio input and output devices.
+- Display of all available devices with the ability to hide or blacklist unwanted devices.
+- Priority device system for organizing the order and number of devices in the list.
+- Detailed information view for each specific audio device.
+- Change the system volume directly from the menu bar.
+- HUD notifications on the screen when adjusting the volume, muting, or switching devices.
+- Custom HUD positioning and extended display time for better visibility.
+- Global keyboard shortcuts for adjusting volume, switching devices, and opening the panel.
 - Customization of components and icons displayed in the menu bar.
-- Configure launch at login behavior and panel display settings.
 
 ## Licensing & Support license
 
