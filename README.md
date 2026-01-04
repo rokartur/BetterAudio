@@ -1,19 +1,18 @@
 <div align="center">
   <a href="https://github.com/rokartur/BetterAudio/releases">
-    <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/8bc33d02-b588-4e30-81bb-4f043568baec" />
-     <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/f37885dd-b281-4247-acb0-471ecd32369b" />
-     <img width="256" height="256" align="center" alt="BetterAudio Logo" src="https://github.com/user-attachments/assets/f37885dd-b281-4247-acb0-471ecd32369b" />
-    </picture>
+    <img width="256" height="256" align="center" alt="BetterAudio Logo" src="https://github.com/user-attachments/assets/4633d931-48b1-4068-ace8-44eb79cce13d" />
   </a>  
   <h1>BetterAudio</h1>
   <p>
     BetterAudio is a macOS menu bar app for advanced audio device management.  
 It lets you quickly switch input/output devices, control volume, see what’s currently playing, and configure global keyboard shortcuts – all from the menu bar.
-  </p>
-  <a href="https://github.com/rokartur/BetterAudio/releases">
-    <img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=white" alt="downloads"/>
-  </a>
+  </p>  
+</div>
+
+<div align="center">
+  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=flat-square&color=0088FF" alt="downloads"/></a>
+  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=flat-square&color=0088FF&include_prereleases" alt="version"/></a>
+  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS-lightgrey?style=flat-square&color=0088FF" alt="os"/></a>
 </div>
 
 <br/>
@@ -23,22 +22,26 @@ It lets you quickly switch input/output devices, control volume, see what’s cu
 </div>
 
 <br/>
-<br/>
 
 <img alt="ba" src="https://github.com/user-attachments/assets/4951a5c9-69f3-4b56-b95d-a73c5ee23976" />
 
 ## Features
 - Quickly mute by clicking on the menu bar icon.
 - Different microphone mute status icons.
-- Now Playing section that shows the currently playing track.
+- Now Playing section that shows the currently playing track and media information.
 - Custom notifications about track changes.
 - Force media keys to work for a selected player (Spotify, Apple Music).
-- Redirect volume keys to the selected player.
-- Quickly switch input and output devices.
-- Show all available devices with the ability to hide/blacklist unwanted ones.
+- Redirect volume keys to a selected player.
+- Quickly switch between input and output audio devices.
+- Show all available devices with the ability to hide or blacklist unwanted ones.
+- Priority Devices system to organize the order and number of devices on the list.
+- Detailed information view for every specific audio device.
 - Change system volume directly from the menu bar.
-- Custom notifications when changing volume or switching devices.
-- Customization of components displayed in the menu bar.
+- On-screen HUD notifications when adjusting volume, muting, or switching devices.
+- Custom HUD positioning and extended display duration for better visibility.
+- Global keyboard shortcuts for volume adjustment, device switching, and opening the panel.
+- Customization of components and icons displayed in the menu bar.
+- Configure launch at login behavior and panel display settings.
 
 ## Licensing & Support license
 
@@ -51,9 +54,10 @@ By buying a Support license you:
   - Let the author spend more time polishing existing features and adding new ones.
 
 - **Unlock extra premium features**
-  - **Volume keys routing** – route the system volume keys to control the output you actually care about (e.g. a specific external device instead of the default one).
-  - **Custom mute HUD position** – move the mute HUD to a custom position on your screen so it doesn’t overlap what you’re working on.
-  - **Extended HUD display time** – increase how long HUDs stay visible, making it easier to see volume / mute / device changes at a glance.
+  - Volume keys routing for Spotify & Apple Music.
+  - Compact mode for the Now Playing section.
+  - Custom Mute and Dictation HUD position.
+  - Extended HUD display time.
 
   These premium options are clearly gated in the UI, so you always know what you unlock with a Support license.
 
