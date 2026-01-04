@@ -55,6 +55,7 @@ By buying a Support license you:
   - Let the author spend more time polishing existing features and adding new ones.
 
 - **Unlock extra premium features**
+  - Audio Sharing feature.
   - Volume keys routing for Spotify & Apple Music.
   - Compact mode for the Now Playing section.
   - Custom Mute and Dictation HUD position.
