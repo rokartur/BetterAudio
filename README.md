@@ -4,8 +4,7 @@
   </a>  
   <h1>BetterAudio</h1>
   <p>
-    BetterAudio is a macOS menu bar app for advanced audio device management.  
-It lets you quickly switch input/output devices, control volume, see what’s currently playing, and configure global keyboard shortcuts – all from the menu bar.
+    BetterAudio is an advanced audio management tool for macOS that puts complete control over your sound environment directly in the menu bar. Switch between input and output devices with a single click, adjust volume with precision using customizable HUD notifications, and manage media playback without disrupting your workflow.
   </p>  
 </div>
 
