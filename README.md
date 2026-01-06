@@ -68,6 +68,11 @@ By buying a Support license you:
 
 In short: **you don’t need a license to use BetterAudio**, but if you find it useful and want to help it grow, a Support license is the best way to say “thank you” — and you get some nice extra features in return.
 
+## Installation
+1. Download the [latest version](https://github.com/rokartur/BetterAudio/releases/latest).
+2. Unzip the `.zip` file and move the app to `/Applications` folder.
+3. Launch the app!
+
 ## Star History
 <div align="center">
   <a href="https://www.star-history.com/#rokartur/BetterAudio&Date">
