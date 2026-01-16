@@ -27,7 +27,7 @@
 <br/>
 
 <div align="center">
-  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/8f1df7b5-7258-4f32-8e6e-30aabd24ae5e" width="100%" style="border-radius: 8px; box-shadow: 0px 4px 15px rgba(0,0,0,0.15);"/>
+  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/a2dbc105-68f7-4672-98dd-3905e93ef828" width="100%" style="border-radius: 8px; box-shadow: 0px 4px 15px rgba(0,0,0,0.15);"/>
 </div>
 
 ---
