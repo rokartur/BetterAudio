@@ -94,8 +94,8 @@ BetterAudio is free to use with a solid set of core features. If you enjoy the a
 | Feature | Free Core Version | Support License |
 | :--- | :---: | :---: |
 | **Input/Output Switching** | ✅ | ✅ |
-| **Per-App Volume (Beta)** | ✅ | ✅ |
-| **External Monitor Control** | ✅ | ✅ |
+| **Per-App Volume Control (Beta)** | ✅ | ✅ |
+| **External Monitor Control (Beta)** | ✅ | ✅ |
 | **Local AI Dictation** | ✅ | ✅ |
 | **Priority Device System** | ✅ | ✅ |
 | **Force Media Keys** (Play/Pause Priority) | ✅ | ✅ |
