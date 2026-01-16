@@ -38,7 +38,7 @@ BetterAudio is packed with features to give you granular control over your Mac's
 
 ### Advanced Audio Control
 * **🆕 Per-app volume control (Beta):** Adjust volume for individual applications independently.
-* **🆕 External Monitor Control (Beta):** Control the volume (and brightness) of external monitors directly via DDC.
+* **🆕 External Monitor Control (Beta):** Control the volume of external monitors directly via DDC.
 * **Device Management:** Quick switching between audio input and output devices.
 * **Audio Sharing:** Play audio on **two devices at once** (Multi-Output).
 * **Detailed Device Info:** View technical details for each specific audio device.
