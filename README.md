@@ -1,82 +1,116 @@
 <div align="center">
   <a href="https://github.com/rokartur/BetterAudio/releases">
-    <img width="256" height="256" align="center" alt="BetterAudio Logo" src="https://github.com/user-attachments/assets/4633d931-48b1-4068-ace8-44eb79cce13d" />
-  </a>  
+    <img width="256" height="256" src="https://github.com/user-attachments/assets/4633d931-48b1-4068-ace8-44eb79cce13d" alt="BetterAudio Logo" />
+  </a>
+
   <h1>BetterAudio</h1>
   <p>
-    BetterAudio is an advanced audio management tool for macOS that puts complete control over your sound environment directly in the menu bar. Switch between input and output devices with a single click, adjust volume with precision using customizable HUD notifications, and manage media playback without disrupting your workflow.
-  </p>  
+    <b>The advanced audio management tool for macOS.</b><br>
+    Put complete control over your sound environment directly in the menu bar. Switch devices, manage volume per-app, transcribe via AI, and customize your HUD without disrupting your workflow.
+  </p>
+
+  <div align="center">
+    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=flat-square&color=0088FF" alt="downloads"/></a>
+    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=flat-square&color=0088FF&include_prereleases" alt="version"/></a>
+    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=flat-square&color=0088FF" alt="os"/></a>
+  </div>
+
+  <br/>
+
+  <div align='center'>
+    <a href='https://github.com/rokartur/BetterAudio/releases/latest'>
+      <img src="https://img.shields.io/badge/Download_Latest_Release-0088FF?style=for-the-badge&logo=apple&logoColor=white" height="40" alt="Download Button" />
+    </a>
+    <br/>
+    <small>Requires macOS 14.6+</small>
+  </div>
 </div>
+
+<br/>
 
 <div align="center">
-  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=flat-square&color=0088FF" alt="downloads"/></a>
-  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=flat-square&color=0088FF&include_prereleases" alt="version"/></a>
-  <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS-lightgrey?style=flat-square&color=0088FF" alt="os"/></a>
+  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/8f1df7b5-7258-4f32-8e6e-30aabd24ae5e" width="100%" style="border-radius: 8px; box-shadow: 0px 4px 15px rgba(0,0,0,0.15);"/>
 </div>
 
-<br/>
-
-<div align='center'>
-  Download <a href='https://github.com/rokartur/BetterAudio/releases/latest'>latest release</a> for macOS 14.6+
-</div>
-
-<br/>
-
-<img alt="betteraudio-main" src="https://github.com/user-attachments/assets/8f1df7b5-7258-4f32-8e6e-30aabd24ae5e" />
+---
 
 ## Features
-- 🆕 Per-app volume control (Beta).
-- 🆕 Control the volume of external monitors (Beta).
-- Ability to dictate and quickly transcribe using local Parekeet AI models.
-- Ability to play audio on two devices at once (Audio Sharing).
-- Quick muting by clicking the icon in the menu bar.
-- Various microphone mute status icons.
-- “Now Playing” section that shows the currently playing track and media information.
-- Custom notifications for track changes.
-- Force media keys to work for the selected player (Spotify, Apple Music).
-- Redirect volume keys to the selected player.
-- Quick switching between audio input and output devices.
-- Display of all available devices with the ability to hide or blacklist unwanted devices.
-- Priority device system for organizing the order and number of devices in the list.
-- Detailed information view for each specific audio device.
-- Change the system volume directly from the menu bar.
-- HUD notifications on the screen when adjusting the volume, muting, or switching devices.
-- Custom HUD positioning and extended display time for better visibility.
-- Global keyboard shortcuts for adjusting volume, switching devices, and opening the panel.
-- Customization of components and icons displayed in the menu bar.
 
-## Licensing & Support license
+BetterAudio is packed with features to give you granular control over your Mac's audio.
 
-BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[Lifetime Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**. Prices: 29.99 PLN, 7.99 EUR, 9.99 USD.
+### Advanced Audio Control
+* **🆕 Per-app volume control (Beta):** Adjust volume for individual applications independently.
+* **🆕 External Monitor Control (Beta):** Control the volume (and brightness) of external monitors directly via DDC.
+* **Device Management:** Quick switching between audio input and output devices.
+* **Audio Sharing:** Play audio on **two devices at once** (Multi-Output).
+* **Detailed Device Info:** View technical details for each specific audio device.
+* **Priority System:** Organize your device list by priority, or hide/blacklist unwanted devices entirely.
+* **System Volume:** Change the global system volume directly from the menu bar slider.
 
-By buying a Support license you:
+### AI & Media Productivity
+* **Local AI Transcription:** Dictate and quickly transcribe text using privacy-focused local **Parakeet AI models**.
+* **Force Media Keys:** Force media keys (Play/Pause/Next) to always control your selected player (Spotify, Apple Music), even if another app is focused.
+* **Volume Key Routing:** Redirect system volume keys (F11/F12) to control the specific volume of Spotify or Apple Music instead of the global macOS volume.
+* **Now Playing:** A dedicated section showing the currently playing track and media info.
 
-- **Support the project directly**
-  - Help cover the cost of backend infrastructure, security work and ongoing maintenance.
-  - Let the author spend more time polishing existing features and adding new ones.
+### UI & Experience
+* **Custom HUD:** Beautiful on-screen notifications when adjusting volume, muting, or switching devices.
+    * *Custom positioning:* Place the HUD where you want it.
+    * *Extended time:* Adjust how long the HUD stays visible.
+* **Smart Muting:** Quick microphone muting by clicking the icon, with various status icons to indicate state.
+* **Global Shortcuts:** Customizable keyboard shortcuts for adjusting volume, switching devices, and opening the panel.
+* **Visual Customization:** Full control over components and icons displayed in the menu bar.
 
-- **Unlock extra premium features**
-  - Audio Sharing feature.
-  - Volume keys routing for Spotify & Apple Music.
-  - Hold Option key to temporarily reverse routing.
-  - Compact mode for the Now Playing section.
-  - Custom Mute and Dictation HUD position.
-  - Extended HUD display time.
-
-  These premium options are clearly gated in the UI, so you always know what you unlock with a Support license.
-
-- **Get a trial before you decide**
-  - New users receive a time‑limited trial where premium features are fully unlocked.
-  - After the trial ends, you can keep using the free core features or support the app by activating a license.
-
-In short: **you don’t need a license to use BetterAudio**, but if you find it useful and want to help it grow, a Support license is the best way to say “thank you” — and you get some nice extra features in return.
+---
 
 ## Installation
-1. Download the [latest version](https://github.com/rokartur/BetterAudio/releases/latest).
-2. Unzip the `.zip` file and move the app to `/Applications` folder.
-3. Launch the app!
+
+To unlock full functionality (including **Per-App Volume Control**), please install both the app and the audio driver.
+
+1.  **Download Files:** Go to the [Latest Release](https://github.com/rokartur/BetterAudio/releases/latest) and download both:
+    * `BetterAudio.zip` (The Application)
+    * `BetterAudioDriver.pkg` (The Audio Engine)
+2.  **Install App:** Unzip the file and drag **BetterAudio** to your `/Applications` folder.
+3.  **Install Driver:** Run `BetterAudioDriver.pkg` and follow the installer prompts.
+4.  **Restart:** Restart your Mac to load the new audio driver.
+5.  **Setup:** Launch BetterAudio and set it as your **system output** to start managing your sound.
+
+---
+
+## Licensing & Support
+
+BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[Lifetime Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**.
+
+**Prices:** 29.99 PLN / 7.99 EUR / 9.99 USD.
+
+### Why buy a Support License?
+
+1.  **Support the project directly:** Help cover backend infrastructure, security work, and ongoing maintenance.
+2.  **Unlock premium features:** Gain access to power-user tools detailed below.
+3.  **Risk-free Trial:** New users receive a time‑limited trial with **all** premium features unlocked.
+
+### Feature Comparison
+
+| Feature | Free Core Version | Support License |
+| :--- | :---: | :---: |
+| **Input/Output Switching** | ✅ | ✅ |
+| **Per-App Volume (Beta)** | ✅ | ✅ |
+| **External Monitor Control** | ✅ | ✅ |
+| **Local AI Dictation** | ✅ | ✅ |
+| **Priority Device System** | ✅ | ✅ |
+| **Force Media Keys** (Play/Pause Priority) | ✅ | ✅ |
+| **Audio Sharing** (Multi-output) | ❌ | ✅ |
+| **Volume Keys Routing** (Spotify/Apple) | ❌ | ✅ |
+| **Compact "Now Playing"** | ❌ | ✅ |
+| **Custom Mute/Dictation HUD Position** | ❌ | ✅ |
+| **Extended HUD Display Time** | ❌ | ✅ |
+
+> **Note:** You don’t *need* a license to use BetterAudio. But if you find it useful, a Support license is the best way to say “thank you”—and you get powerful extra workflows in return.
+
+---
 
 ## Star History
+
 <div align="center">
   <a href="https://www.star-history.com/#rokartur/BetterAudio&Date">
    <picture>
