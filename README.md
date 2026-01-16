@@ -25,6 +25,8 @@
 <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/8f1df7b5-7258-4f32-8e6e-30aabd24ae5e" />
 
 ## Features
+- 🆕 Per-app volume control (Beta).
+- 🆕 Control the volume of external monitors (Beta).
 - Ability to dictate and quickly transcribe using local Parekeet AI models.
 - Ability to play audio on two devices at once (Audio Sharing).
 - Quick muting by clicking the icon in the menu bar.
@@ -56,6 +58,7 @@ By buying a Support license you:
 - **Unlock extra premium features**
   - Audio Sharing feature.
   - Volume keys routing for Spotify & Apple Music.
+  - Hold Option key to temporarily reverse routing.
   - Compact mode for the Now Playing section.
   - Custom Mute and Dictation HUD position.
   - Extended HUD display time.
