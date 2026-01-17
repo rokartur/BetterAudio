@@ -18,9 +18,10 @@
   <br/>
 
   <div align='center'>
-    <a href='https://github.com/rokartur/BetterAudio/releases/latest'>
-      <img src="https://img.shields.io/badge/Download_Latest_Release-0088FF?style=for-the-badge&logo=apple&logoColor=white" height="40" alt="Download Button" />
-    </a>
+    <a href='https://github.com/rokartur/BetterAudio/releases/latest'><img src="https://img.shields.io/badge/Download_Latest_Release-0088FF?style=for-the-badge&logo=apple&logoColor=white" height="40" alt="Download Button" /></a>
+    <br/>
+    <br/>
+    <a href="https://www.producthunt.com/products/betteraudio/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-betteraudio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1115352&theme=neutral" alt="BetterAudio - The&#0032;advanced&#0032;audio&#0032;management&#0032;tool&#0032;for&#0032;macOS | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
   </div>
 </div>
 
