@@ -68,7 +68,7 @@ To unlock full functionality (including **Per-App Volume Control**), please inst
 
 ## Licensing & Support
 
-BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[Lifetime Support license](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**.
+BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[BetterAudio Support – Lifetime License](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**.
 
 **Prices:** 29.99 PLN / 7.99 EUR / 9.99 USD.
 
