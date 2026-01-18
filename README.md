@@ -1,17 +1,16 @@
 <div align="center">
   <a href="https://github.com/rokartur/BetterAudio/releases">
-    <img width="256" height="256" src="https://github.com/user-attachments/assets/4633d931-48b1-4068-ace8-44eb79cce13d" alt="BetterAudio Logo" />
+    <img width="128" height="128" src="https://github.com/user-attachments/assets/4633d931-48b1-4068-ace8-44eb79cce13d" alt="BetterAudio Logo" />
   </a>
 
-  <h1>BetterAudio</h1>
+  <h3>BetterAudio</h3>
   <p>
-    <b>The advanced audio management tool for macOS.</b><br>
-    Put complete control over your sound environment directly in the menu bar. Switch devices, manage volume per-app, transcribe via AI, and customize your HUD without disrupting your workflow.
+    Put complete control over your sound environment directly in the menu bar. <br/> Switch devices, manage volume per-app, transcribe via AI, and customize your HUD without disrupting your workflow.
   </p>
 
   <div align="center">
-    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=0088FF" alt="downloads"/></a>
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=0088FF&include_prereleases" alt="version"/></a>
+    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=0088FF" alt="downloads"/></a>
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=for-the-badge&color=0088FF" alt="os"/></a>
   </div>
 
@@ -19,9 +18,6 @@
 
   <div align='center'>
     <a href='https://github.com/rokartur/BetterAudio/releases/latest'><img src="https://img.shields.io/badge/Download_Latest_Release-0088FF?style=for-the-badge&logo=apple&logoColor=white" height="40" alt="Download Button" /></a>
-    <br/>
-    <br/>
-    <a href="https://www.producthunt.com/products/betteraudio/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-betteraudio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1115352&theme=neutral" alt="BetterAudio - The&#0032;advanced&#0032;audio&#0032;management&#0032;tool&#0032;for&#0032;macOS | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
   </div>
 </div>
 
@@ -30,8 +26,6 @@
 <div align="center">
   <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/a2dbc105-68f7-4672-98dd-3905e93ef828" width="100%" style="border-radius: 8px; box-shadow: 0px 4px 15px rgba(0,0,0,0.15);"/>
 </div>
-
----
 
 ## Features
 
@@ -60,8 +54,6 @@ BetterAudio is packed with features to give you granular control over your Mac's
 * **Global Shortcuts:** Customizable keyboard shortcuts for adjusting volume, switching devices, and opening the panel.
 * **Visual Customization:** Full control over components and icons displayed in the menu bar.
 
----
-
 ## Installation
 
 To unlock full functionality (including **Per-App Volume Control**), please install both the app and the audio driver.
@@ -73,8 +65,6 @@ To unlock full functionality (including **Per-App Volume Control**), please inst
 3.  **Install Driver:** Run `BetterAudioDriver.pkg` and follow the installer prompts.
 4.  **Restart:** Restart your Mac to load the new audio driver.
 5.  **Setup:** Launch BetterAudio and set it as your **system output** to start managing your sound.
-
----
 
 ## Licensing & Support
 
@@ -105,17 +95,3 @@ BetterAudio is free to use with a solid set of core features. If you enjoy the a
 | **Extended HUD Display Time** | ❌ | ✅ |
 
 > **Note:** You don’t *need* a license to use BetterAudio. But if you find it useful, a Support license is the best way to say “thank you”—and you get powerful extra workflows in return.
-
----
-
-## Star History
-
-<div align="center">
-  <a href="https://www.star-history.com/#rokartur/BetterAudio&Date">
-   <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=rokartur/BetterAudio&type=Date&theme=dark" />
-     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=rokartur/BetterAudio&type=Date" />
-     <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=rokartur/BetterAudio&type=Date" />
-   </picture>
-  </a>
-</div>
