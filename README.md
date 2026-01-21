@@ -32,8 +32,8 @@
 BetterAudio is packed with features to give you granular control over your Mac's audio.
 
 ### Advanced Audio Control
-* **🆕 Per-app volume control (Beta):** Adjust volume for individual applications independently.
-* **🆕 External Monitor Control (Beta):** Control the volume of external monitors directly via DDC.
+* **🆕 Per-app volume control:** Adjust volume for individual applications independently.
+* **🆕 External Monitor Control:** Control the volume of external monitors directly via DDC.
 * **Device Management:** Quick switching between audio input and output devices.
 * **Audio Sharing:** Play audio on **two devices at once** (Multi-Output).
 * **Detailed Device Info:** View technical details for each specific audio device.
@@ -56,15 +56,9 @@ BetterAudio is packed with features to give you granular control over your Mac's
 
 ## Installation
 
-To unlock full functionality (including **Per-App Volume Control**), please install both the app and the audio driver.
-
-1.  **Download Files:** Go to the [Latest Release](https://github.com/rokartur/BetterAudio/releases/latest) and download both:
-    * `BetterAudio.zip` (The Application)
-    * `BetterAudioDriver.pkg` (The Audio Engine)
-2.  **Install App:** Unzip the file and drag **BetterAudio** to your `/Applications` folder.
-3.  **Install Driver:** Run `BetterAudioDriver.pkg` and follow the installer prompts.
-4.  **Restart:** Restart your Mac to load the new audio driver.
-5.  **Setup:** Launch BetterAudio and set it as your **system output** to start managing your sound.
+1.  Go to the [Latest Release](https://github.com/rokartur/BetterAudio/releases/latest) and download.
+2.  Unzip the file and drag **BetterAudio** to your `/Applications` folder.
+3.  Launch BetterAudio!
 
 ## Licensing & Support
 
@@ -83,8 +77,8 @@ BetterAudio is free to use with a solid set of core features. If you enjoy the a
 | Feature | Free Core Version | Support License |
 | :--- | :---: | :---: |
 | **Input/Output Switching** | ✅ | ✅ |
-| **Per-App Volume Control (Beta)** | ✅ | ✅ |
-| **External Monitor Control (Beta)** | ✅ | ✅ |
+| **Per-App Volume Control** | ✅ | ✅ |
+| **External Monitor Control** | ✅ | ✅ |
 | **Local AI Dictation** | ✅ | ✅ |
 | **Priority Device System** | ✅ | ✅ |
 | **Force Media Keys** (Play/Pause Priority) | ✅ | ✅ |
