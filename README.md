@@ -55,10 +55,19 @@ BetterAudio is packed with features to give you granular control over your Mac's
 * **Visual Customization:** Full control over components and icons displayed in the menu bar.
 
 ## Installation
+Install the app using one of the following methods:
 
+### Manual
 1.  Go to the [Latest Release](https://github.com/rokartur/BetterAudio/releases/latest) and download.
 2.  Unzip the file and drag **BetterAudio** to your `/Applications` folder.
 3.  Launch BetterAudio!
+
+### Homebrew
+1. Install [Homebrew](https://brew.sh/)
+2. Run:
+```shell
+brew install rokartur/betteraudio/betteraudio
+```
 
 ## Licensing & Support
 
