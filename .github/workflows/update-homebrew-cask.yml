@@ -1,0 +1,69 @@
+name: Update Homebrew Cask
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-cask:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get release info
+        id: release
+        run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          # Remove 'v' prefix if present
+          VERSION="${VERSION#v}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Release version: $VERSION"
+
+      - name: Download release asset and calculate SHA256
+        id: sha
+        run: |
+          VERSION="${{ steps.release.outputs.version }}"
+          URL="https://github.com/rokartur/BetterAudio/releases/download/${VERSION}/BetterAudio-${VERSION}.zip"
+          echo "Downloading from: $URL"
+          
+          # Download the file
+          curl -L -o BetterAudio.zip "$URL"
+          
+          # Calculate SHA256
+          SHA256=$(sha256sum BetterAudio.zip | awk '{print $1}')
+          echo "sha256=$SHA256" >> $GITHUB_OUTPUT
+          echo "SHA256: $SHA256"
+
+      - name: Checkout homebrew-betteraudio
+        uses: actions/checkout@v4
+        with:
+          repository: rokartur/homebrew-betteraudio
+          token: ${{ secrets.HOMEBREW_PAT }}
+          path: homebrew-betteraudio
+
+      - name: Update Cask file
+        run: |
+          VERSION="${{ steps.release.outputs.version }}"
+          SHA256="${{ steps.sha.outputs.sha256 }}"
+          CASK_FILE="homebrew-betteraudio/Casks/betteraudio.rb"
+          
+          echo "Updating cask to version $VERSION with SHA256 $SHA256"
+          
+          # Update version
+          sed -i "s/version \"[^\"]*\"/version \"$VERSION\"/" "$CASK_FILE"
+          
+          # Update sha256
+          sed -i "s/sha256 \"[^\"]*\"/sha256 \"$SHA256\"/" "$CASK_FILE"
+          
+          echo "Updated cask file:"
+          cat "$CASK_FILE"
+
+      - name: Commit and push changes
+        run: |
+          cd homebrew-betteraudio
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          VERSION="${{ steps.release.outputs.version }}"
+          
+          git add Casks/betteraudio.rb
+          git diff --staged --quiet || git commit -m "Update BetterAudio to $VERSION"
+          git push
