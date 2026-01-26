@@ -1,7 +1,8 @@
 <div align="center">
   <a href="https://github.com/rokartur/BetterAudio/releases">
-    <img width="128" height="128" src="https://github.com/user-attachments/assets/4633d931-48b1-4068-ace8-44eb79cce13d" alt="BetterAudio Logo" />
+    <img width="128" height="128" src="https://github.com/user-attachments/assets/d19e9ea2-7105-4945-8030-ce7b60b49770" alt="BetterAudio Logo" />
   </a>
+
 
   <h3>BetterAudio</h3>
   <p>
@@ -24,29 +25,22 @@
 <br/>
 
 <div align="center">
-  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/a2dbc105-68f7-4672-98dd-3905e93ef828" width="100%" style="border-radius: 8px; box-shadow: 0px 4px 15px rgba(0,0,0,0.15);"/>
+  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/c219d48d-0e68-4aa5-b291-94c85c0a0436" width="100%" />
 </div>
 
 ## Features
 
-BetterAudio is packed with features to give you granular control over your Mac's audio.
-
-### Advanced Audio Control
-* **🆕 Per-app volume control:** Adjust volume for individual applications independently.
-* **🆕 External Monitor Control:** Control the volume of external monitors directly via DDC.
+* **Per-app volume control:** Adjust volume for individual applications independently.
+* **External Monitor Control:** Control the volume of external monitors directly via DDC.
 * **Device Management:** Quick switching between audio input and output devices.
 * **Audio Sharing:** Play audio on **two devices at once** (Multi-Output).
 * **Detailed Device Info:** View technical details for each specific audio device.
 * **Priority System:** Organize your device list by priority, or hide/blacklist unwanted devices entirely.
 * **System Volume:** Change the global system volume directly from the menu bar slider.
-
-### AI & Media Productivity
 * **Local AI Transcription:** Dictate and quickly transcribe text using privacy-focused local **Parakeet AI models**.
 * **Force Media Keys:** Force media keys (Play/Pause/Next) to always control your selected player (Spotify, Apple Music), even if another app is focused.
 * **Volume Key Routing:** Redirect system volume keys (F11/F12) to control the specific volume of Spotify or Apple Music instead of the global macOS volume.
 * **Now Playing:** A dedicated section showing the currently playing track and media info.
-
-### UI & Experience
 * **Custom HUD:** Beautiful on-screen notifications when adjusting volume, muting, or switching devices.
     * *Custom positioning:* Place the HUD where you want it.
     * *Extended time:* Adjust how long the HUD stays visible.
@@ -80,21 +74,3 @@ BetterAudio is free to use with a solid set of core features. If you enjoy the a
 1.  **Support the project directly:** Help cover backend infrastructure, security work, and ongoing maintenance.
 2.  **Unlock premium features:** Gain access to power-user tools detailed below.
 3.  **Risk-free Trial:** New users receive a time‑limited trial with **all** premium features unlocked.
-
-### Feature Comparison
-
-| Feature | Free Core Version | Support License |
-| :--- | :---: | :---: |
-| **Input/Output Switching** | ✅ | ✅ |
-| **Per-App Volume Control** | ✅ | ✅ |
-| **External Monitor Control** | ✅ | ✅ |
-| **Local AI Dictation** | ✅ | ✅ |
-| **Priority Device System** | ✅ | ✅ |
-| **Force Media Keys** (Play/Pause Priority) | ✅ | ✅ |
-| **Audio Sharing** (Multi-output) | ❌ | ✅ |
-| **Volume Keys Routing** (Spotify/Apple) | ❌ | ✅ |
-| **Compact "Now Playing"** | ❌ | ✅ |
-| **Custom Mute/Dictation HUD Position** | ❌ | ✅ |
-| **Extended HUD Display Time** | ❌ | ✅ |
-
-> **Note:** You don’t *need* a license to use BetterAudio. But if you find it useful, a Support license is the best way to say “thank you”—and you get powerful extra workflows in return.
