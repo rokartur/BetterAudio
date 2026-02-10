@@ -28,26 +28,6 @@
   <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/c219d48d-0e68-4aa5-b291-94c85c0a0436" width="100%" />
 </div>
 
-## Features
-
-* **Per-app volume control:** Adjust volume for individual applications independently.
-* **External Monitor Control:** Control the volume of external monitors directly via DDC.
-* **Device Management:** Quick switching between audio input and output devices.
-* **Audio Sharing:** Play audio on **two devices at once** (Multi-Output).
-* **Detailed Device Info:** View technical details for each specific audio device.
-* **Priority System:** Organize your device list by priority, or hide/blacklist unwanted devices entirely.
-* **System Volume:** Change the global system volume directly from the menu bar slider.
-* **Local AI Transcription:** Dictate and quickly transcribe text using privacy-focused local **Parakeet AI models**.
-* **Force Media Keys:** Force media keys (Play/Pause/Next) to always control your selected player (Spotify, Apple Music), even if another app is focused.
-* **Volume Key Routing:** Redirect system volume keys (F11/F12) to control the specific volume of Spotify or Apple Music instead of the global macOS volume.
-* **Now Playing:** A dedicated section showing the currently playing track and media info.
-* **Custom HUD:** Beautiful on-screen notifications when adjusting volume, muting, or switching devices.
-    * *Custom positioning:* Place the HUD where you want it.
-    * *Extended time:* Adjust how long the HUD stays visible.
-* **Smart Muting:** Quick microphone muting by clicking the icon, with various status icons to indicate state.
-* **Global Shortcuts:** Customizable keyboard shortcuts for adjusting volume, switching devices, and opening the panel.
-* **Visual Customization:** Full control over components and icons displayed in the menu bar.
-
 ## Installation
 Install the app using one of the following methods:
 
