@@ -102,8 +102,14 @@
             "state": "translated",
             "value": "\n\n轉錄文本已複製到剪貼簿。"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "value": "\n\nThe transcribed text has been copied to your clipboard instead."
+          }
         }
-      }
+      },
+      "comment": "Those two lines above the text should be there."
     },
     "-12": {
       "localizations": {
