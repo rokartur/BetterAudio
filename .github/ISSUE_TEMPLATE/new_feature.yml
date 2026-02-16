@@ -1,5 +1,5 @@
 name: New Feature
-about: Suggest a new feature or enhancement
+description: Suggest a new feature or enhancement
 labels: ["enhancement", "feature-request"]
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
         - macOS
         - iOS
         - Both
-      default: macOS
+      default: 0
   - type: input
     id: related_issues
     attributes:

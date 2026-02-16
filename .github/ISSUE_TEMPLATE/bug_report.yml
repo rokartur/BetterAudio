@@ -41,7 +41,7 @@ body:
         - macOS
         - iOS (remote)
         - Both
-      default: macOS
+      default: 0
   - type: input
     id: app_version
     attributes:
