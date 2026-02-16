@@ -5,7 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the sections below to help everyone identify and fix the bug
+        Please fill out the sections below to help everyone identify and fix the bug.
+        For crash reports include the app version and OS version (required).
   - type: textarea
     id: description
     attributes:
@@ -32,6 +33,31 @@ body:
     id: screenshots
     attributes:
       label: Put here any screenshots or videos (optional)
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - iOS (remote)
+        - Both
+      default: macOS
+  - type: input
+    id: app_version
+    attributes:
+      label: Application version
+      description: Find it in "About BetterAudio" or in the app's menu. (e.g. 1.2.3)
+      placeholder: 1.2.3
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: Operating system (name + version)
+      description: e.g. macOS 14.2.1 — include platform and version.
+      placeholder: macOS 14.2.1
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
