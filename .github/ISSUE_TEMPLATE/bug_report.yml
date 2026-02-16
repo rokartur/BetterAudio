@@ -6,7 +6,6 @@ body:
     attributes:
       value: |
         Please fill out the sections below to help everyone identify and fix the bug.
-        For crash reports include the app version and OS version (required).
   - type: textarea
     id: description
     attributes:
@@ -39,7 +38,7 @@ body:
       label: Platform
       options:
         - macOS
-        - iOS (remote)
+        - iOS
         - Both
       default: 0
   - type: input
