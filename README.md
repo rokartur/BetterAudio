@@ -25,7 +25,7 @@
 <br/>
 
 <div align="center">
-  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/c219d48d-0e68-4aa5-b291-94c85c0a0436" width="100%" />
+  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/e32c3334-2285-4c44-a8cb-ca027c307731" width="100%" />
 </div>
 
 ## Installation
