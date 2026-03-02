@@ -5,20 +5,17 @@
 
 
   <h3>BetterAudio</h3>
-  <p>
-    Put complete control over your sound environment directly in the menu bar. <br/> Switch devices, manage volume per-app, transcribe via AI, and customize your HUD without disrupting your workflow.
-  </p>
+  
+  <div align='center'>
+    <a href='https://github.com/rokartur/BetterAudio/releases/latest'><img src="https://img.shields.io/badge/Download_Latest_Release-F5F5F4?style=for-the-badge&logo=apple&logoColor=black" height="40" alt="Download Button" /></a>
+  </div>
 
+  <br/>
+  
   <div align="center">
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=F5F5F4&include_prereleases" alt="version"/></a>
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=F5F5F4" alt="downloads"/></a>
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=for-the-badge&color=F5F5F4" alt="os"/></a>
-  </div>
-
-  <br/>
-
-  <div align='center'>
-    <a href='https://github.com/rokartur/BetterAudio/releases/latest'><img src="https://img.shields.io/badge/Download_Latest_Release-F5F5F4?style=for-the-badge&logo=apple&logoColor=black" height="40" alt="Download Button" /></a>
   </div>
 </div>
 
