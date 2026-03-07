@@ -8,8 +8,34 @@ jobs:
   update-cask:
     runs-on: ubuntu-latest
     steps:
+      - name: Check if release should update Homebrew cask
+        id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_TAG="${{ github.event.release.tag_name }}"
+
+          if [ "${{ github.event.release.prerelease }}" = "true" ]; then
+            echo "should_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping pre-release: $RELEASE_TAG"
+            exit 0
+          fi
+
+          LATEST_TAG=$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')
+          echo "Latest stable release tag: $LATEST_TAG"
+
+          if [ "$RELEASE_TAG" != "$LATEST_TAG" ]; then
+            echo "should_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping non-latest stable release: $RELEASE_TAG"
+            exit 0
+          fi
+
+          echo "should_update=true" >> "$GITHUB_OUTPUT"
+          echo "Proceeding with latest stable release: $RELEASE_TAG"
+
       - name: Get release info
         id: release
+        if: steps.gate.outputs.should_update == 'true'
         run: |
           VERSION="${{ github.event.release.tag_name }}"
           # Remove 'v' prefix if present
@@ -19,6 +45,7 @@ jobs:
 
       - name: Download release asset and calculate SHA256
         id: sha
+        if: steps.gate.outputs.should_update == 'true'
         run: |
           VERSION="${{ steps.release.outputs.version }}"
           URL="https://github.com/rokartur/BetterAudio/releases/download/${VERSION}/BetterAudio-${VERSION}.zip"
@@ -33,6 +60,7 @@ jobs:
           echo "SHA256: $SHA256"
 
       - name: Checkout homebrew-betteraudio
+        if: steps.gate.outputs.should_update == 'true'
         uses: actions/checkout@v4
         with:
           repository: rokartur/homebrew-betteraudio
@@ -40,6 +68,7 @@ jobs:
           path: homebrew-betteraudio
 
       - name: Update Cask file
+        if: steps.gate.outputs.should_update == 'true'
         run: |
           VERSION="${{ steps.release.outputs.version }}"
           SHA256="${{ steps.sha.outputs.sha256 }}"
@@ -57,6 +86,7 @@ jobs:
           cat "$CASK_FILE"
 
       - name: Commit and push changes
+        if: steps.gate.outputs.should_update == 'true'
         run: |
           cd homebrew-betteraudio
           git config user.name "github-actions[bot]"
