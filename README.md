@@ -19,12 +19,6 @@
   </div>
 </div>
 
-<br/>
-
-<div align="center">
-  <img alt="betteraudio-main" src="https://github.com/user-attachments/assets/e32c3334-2285-4c44-a8cb-ca027c307731" width="100%" />
-</div>
-
 ## Installation
 Install the app using one of the following methods:
 
