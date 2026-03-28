@@ -73,7 +73,7 @@ function AppItem({
     });
   }
   if (app.deviceUID && app.deviceUID !== "default") {
-    accessories.push({ text: `→ ${app.deviceUID}` });
+    accessories.push({ text: `→ ${app.deviceName ?? app.deviceUID}` });
   }
   accessories.push({ text: `${volumePercent}%` });
 

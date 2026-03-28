@@ -17,6 +17,7 @@ export interface CLIAppInfo {
   volume: number;
   isMuted: boolean;
   deviceUID?: string | null;
+  deviceName?: string | null;
   eqPreset?: string | null;
   balance?: number | null;
 }
