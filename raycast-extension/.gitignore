@@ -8,6 +8,8 @@ dist/
 
 # Raycast
 .raycast/
+raycast-env.d.ts
 
 # macOS
 .DS_Store
+../.DS_Store

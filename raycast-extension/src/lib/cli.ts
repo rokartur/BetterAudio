@@ -1,4 +1,5 @@
 import { execFile } from "node:child_process";
+import type { ExecFileException } from "node:child_process";
 import { access, constants } from "node:fs/promises";
 import { getPreferenceValues } from "@raycast/api";
 import { CLI_PATHS, CLI_TIMEOUT } from "./constants";
@@ -73,7 +74,9 @@ async function resolveCLIPath(): Promise<string> {
       await access(p, constants.X_OK);
       resolvedPath = p;
       return resolvedPath;
-    } catch {}
+    } catch {
+      // Ignore missing/non-executable candidates and keep searching.
+    }
   }
 
   throw new CLINotFoundError();
@@ -87,7 +90,7 @@ export async function runCLI(args: string[]): Promise<CLIResponse> {
       cliPath,
       [...args, "--json"],
       { timeout: CLI_TIMEOUT },
-      (error, stdout, stderr) => {
+      (error: ExecFileException | null, stdout: string, stderr: string) => {
         if (error) {
           const msg = stderr?.trim() || error.message;
 

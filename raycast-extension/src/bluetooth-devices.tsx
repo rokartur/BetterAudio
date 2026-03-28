@@ -1,4 +1,4 @@
-import { Icon, List } from "@raycast/api";
+import { List } from "@raycast/api";
 import { useCachedPromise } from "@raycast/utils";
 import { listBluetooth } from "./lib/cli";
 import { ErrorView } from "./components/ErrorView";

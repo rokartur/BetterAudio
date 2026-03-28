@@ -101,7 +101,7 @@ ${info?.volume != null ? `| **Volume** | ${Math.round(info.volume)}% |` : ""}
             }}
           />
           <Action
-            title="Forward 15s"
+            title="Skip Forward 15 Seconds"
             icon={Icon.Forward}
             shortcut={{ modifiers: ["cmd", "shift"], key: "arrowRight" }}
             onAction={async () => {
@@ -110,7 +110,7 @@ ${info?.volume != null ? `| **Volume** | ${Math.round(info.volume)}% |` : ""}
             }}
           />
           <Action
-            title="Backward 15s"
+            title="Skip Backward 15 Seconds"
             icon={Icon.Rewind}
             shortcut={{ modifiers: ["cmd", "shift"], key: "arrowLeft" }}
             onAction={async () => {
