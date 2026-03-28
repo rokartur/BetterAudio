@@ -1,6 +1,6 @@
 # BetterAudio for Raycast
 
-Control [BetterAudio](https://betteraudio.app) from Raycast.
+Control [BetterAudio](https://betteraudio.pro) from Raycast.
 
 This extension gives you quick access to:
 
