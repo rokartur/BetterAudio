@@ -1,0 +1,131 @@
+name: Update Homebrew Cask
+
+on:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: read
+
+jobs:
+  update-cask:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check whether release should update Homebrew cask
+        id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          IS_PRERELEASE: ${{ github.event.release.prerelease }}
+        run: |
+          if [ "$IS_PRERELEASE" = "true" ]; then
+            echo "should_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping prerelease: $RELEASE_TAG"
+            exit 0
+          fi
+
+          LATEST_TAG=$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')
+          echo "Latest stable release tag: $LATEST_TAG"
+
+          if [ "$RELEASE_TAG" != "$LATEST_TAG" ]; then
+            echo "should_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping non-latest stable release: $RELEASE_TAG"
+            exit 0
+          fi
+
+          echo "should_update=true" >> "$GITHUB_OUTPUT"
+          echo "Proceeding with latest stable release: $RELEASE_TAG"
+
+      - name: Resolve release version and asset URL
+        id: release
+        if: steps.gate.outputs.should_update == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          VERSION="${RELEASE_TAG#v}"
+          ASSET_NAME="BetterAudio-${VERSION}.zip"
+          ASSET_URL=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" --jq ".assets[] | select(.name == \"${ASSET_NAME}\") | .browser_download_url")
+
+          if [ -z "$ASSET_URL" ]; then
+            echo "Could not find release asset: $ASSET_NAME"
+            exit 1
+          fi
+
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "asset_name=$ASSET_NAME" >> "$GITHUB_OUTPUT"
+          echo "asset_url=$ASSET_URL" >> "$GITHUB_OUTPUT"
+
+          echo "Release version: $VERSION"
+          echo "Release asset: $ASSET_NAME"
+          echo "Release URL: $ASSET_URL"
+
+      - name: Download release asset and calculate SHA256
+        id: sha
+        if: steps.gate.outputs.should_update == 'true'
+        env:
+          ASSET_URL: ${{ steps.release.outputs.asset_url }}
+          ASSET_NAME: ${{ steps.release.outputs.asset_name }}
+        run: |
+          curl -fL --retry 3 --retry-all-errors -o "$ASSET_NAME" "$ASSET_URL"
+
+          SHA256=$(sha256sum "$ASSET_NAME" | cut -d ' ' -f 1)
+          echo "sha256=$SHA256" >> "$GITHUB_OUTPUT"
+          echo "SHA256: $SHA256"
+
+      - name: Checkout homebrew-betteraudio
+        if: steps.gate.outputs.should_update == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: rokartur/homebrew-betteraudio
+          token: ${{ secrets.HOMEBREW_PAT }}
+          path: homebrew-betteraudio
+
+      - name: Update cask file
+        if: steps.gate.outputs.should_update == 'true'
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+          SHA256: ${{ steps.sha.outputs.sha256 }}
+        run: |
+          python3 <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          cask_file = Path("homebrew-betteraudio/Casks/betteraudio.rb")
+          version = os.environ["VERSION"]
+          sha256 = os.environ["SHA256"]
+
+          original = cask_file.read_text()
+          updated = re.sub(r'version "[^"]+"', f'version "{version}"', original, count=1)
+          updated = re.sub(r'sha256 "[^"]+"', f'sha256 "{sha256}"', updated, count=1)
+
+          if updated == original:
+              print("Cask already up to date; nothing to change.")
+          else:
+              cask_file.write_text(updated)
+              print(f"Updated {cask_file} to version {version} with SHA256 {sha256}")
+          PY
+
+          cat homebrew-betteraudio/Casks/betteraudio.rb
+
+      - name: Commit and push cask update
+        if: steps.gate.outputs.should_update == 'true'
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          git -C homebrew-betteraudio add Casks/betteraudio.rb
+
+          if git -C homebrew-betteraudio diff --staged --quiet; then
+            echo "No cask changes to commit."
+            exit 0
+          fi
+
+          git -C homebrew-betteraudio \
+            -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m "Update BetterAudio to version ${VERSION}"
+
+          git -C homebrew-betteraudio push
