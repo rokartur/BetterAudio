@@ -46,7 +46,7 @@ jobs:
           RELEASE_TAG: ${{ github.event.release.tag_name }}
         run: |
           VERSION="${RELEASE_TAG#v}"
-          ASSET_NAME="BetterAudio-${VERSION}.zip"
+          ASSET_NAME="BetterAudio-${VERSION}.dmg"
           ASSET_URL=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" --jq ".assets[] | select(.name == \"${ASSET_NAME}\") | .browser_download_url")
 
           if [ -z "$ASSET_URL" ]; then
