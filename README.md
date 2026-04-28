@@ -14,25 +14,9 @@
   
   <div align="center">
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=F5F5F4&include_prereleases" alt="version"/></a>
-    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/downloads/rokartur/BetterAudio/total?style=for-the-badge&color=F5F5F4" alt="downloads"/></a>
     <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=for-the-badge&color=F5F5F4" alt="os"/></a>
   </div>
 </div>
-
-## Installation
-Install the app using one of the following methods:
-
-### Manual
-1.  Go to the [Latest Release](https://github.com/rokartur/BetterAudio/releases/latest) and download.
-2.  Unzip the file and drag **BetterAudio** to your `/Applications` folder.
-3.  Launch BetterAudio!
-
-### Homebrew
-1. Install [Homebrew](https://brew.sh/)
-2. Run:
-```shell
-brew install rokartur/betteraudio/betteraudio
-```
 
 ## Licensing & Support
 
