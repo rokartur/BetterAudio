@@ -1,22 +1,12 @@
-<div align="center">
-  <a href="https://github.com/rokartur/BetterAudio/releases">
-    <img width="128" height="128" src="https://github.com/user-attachments/assets/d19e9ea2-7105-4945-8030-ce7b60b49770" alt="BetterAudio Logo" />
-  </a>
+<a href="https://github.com/rokartur/BetterAudio/releases">
+  <img width="128" height="128" src="https://github.com/user-attachments/assets/d19e9ea2-7105-4945-8030-ce7b60b49770" alt="BetterAudio Logo" />
+</a>
 
+# BetterAudio
 
-  <h3>BetterAudio</h3>
-  
-  <div align='center'>
-    <a href='https://github.com/rokartur/BetterAudio/releases/latest'><img src="https://img.shields.io/badge/Download_Latest_Release-F5F5F4?style=for-the-badge&logo=apple&logoColor=black" height="40" alt="Download Button" /></a>
-  </div>
-
-  <br/>
-  
-  <div align="center">
-    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=F5F5F4&include_prereleases" alt="version"/></a>
-    <a href="https://github.com/rokartur/BetterAudio/releases"><img src="https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=for-the-badge&color=F5F5F4" alt="os"/></a>
-  </div>
-</div>
+[![image](https://img.shields.io/badge/Download_Latest_Release-F5F5F4?style=for-the-badge&logo=apple&logoColor=black)](https://github.com/rokartur/BetterAudio/releases/latest)
+[![image](https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=F5F5F4&include_prereleases)](https://github.com/rokartur/BetterAudio/releases/latest)
+[![image](https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=for-the-badge&color=F5F5F4)](https://github.com/rokartur/BetterAudio/releases/latest)
 
 ## Licensing & Support
 
@@ -26,6 +16,6 @@ BetterAudio is free to use with a solid set of core features. If you enjoy the a
 
 ### Why buy a Support License?
 
-1.  **Support the project directly:** Help cover backend infrastructure, security work, and ongoing maintenance.
-2.  **Unlock premium features:** Gain access to power-user tools detailed below.
-3.  **Risk-free Trial:** New users receive a time‑limited trial with **all** premium features unlocked.
+1. **Support the project directly:** Help cover backend infrastructure, security work, and ongoing maintenance.
+2. **Unlock premium features:** Gain access to power-user tools detailed below.
+3. **Risk-free Trial:** New users receive a time-limited trial with **all** premium features unlocked.
