@@ -1,7 +1,3 @@
-<a href="https://github.com/rokartur/BetterAudio/releases">
-  <img width="128" height="128" src="https://github.com/user-attachments/assets/d19e9ea2-7105-4945-8030-ce7b60b49770" alt="BetterAudio Logo" />
-</a>
-
 # BetterAudio
 
 [![image](https://img.shields.io/badge/Download_Latest_Release-F5F5F4?style=for-the-badge&logo=apple&logoColor=black)](https://github.com/rokartur/BetterAudio/releases/latest)
