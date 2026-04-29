@@ -1,8 +1,9 @@
 name: Label Issue Platform
 
 on:
-  issues:
-    types: [opened]
+  # issues:
+  #   types: [opened]
+  workflow_dispatch:
 
 jobs:
   label-platform:
