@@ -4,6 +4,8 @@
 [![image](https://img.shields.io/github/release/rokartur/BetterAudio?style=for-the-badge&color=F5F5F4&include_prereleases)](https://github.com/rokartur/BetterAudio/releases/latest)
 [![image](https://img.shields.io/badge/platform-macOS%2014.6+-lightgrey?style=for-the-badge&color=F5F5F4)](https://github.com/rokartur/BetterAudio/releases/latest)
 
+<a href="https://www.raycast.com/rokartur/betteraudio" title="Install betteraudio Raycast Extension"><img src="https://www.raycast.com/rokartur/betteraudio/install_button@2x.png?v=1.1" height="64" style="height: 64px;" alt="" /></a>
+
 ## Licensing & Support
 
 BetterAudio is free to use with a solid set of core features. If you enjoy the app and want to **support its development**, you can purchase a **[BetterAudio Support – Lifetime License](https://buy.stripe.com/00w9AU6pp5pV7eNaeq7g400)**.
