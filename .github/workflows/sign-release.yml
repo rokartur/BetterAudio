@@ -4,6 +4,8 @@
 #
 # Setup: add secret BETTERUPDATER_PRIVATE_KEY in rokartur/BetterAudio
 # (base64 Ed25519 private key whose PUBLIC half is pinned in BetterAudioApp).
+# Backup copy: login Keychain, service "BetterUpdater BetterAudio"; read it with
+#   security find-generic-password -s "BetterUpdater BetterAudio" -w
 #
 # Decoupled from the build: triggers on release publish and signs whatever
 # .dmg/.zip assets are attached. Runs alongside the existing
