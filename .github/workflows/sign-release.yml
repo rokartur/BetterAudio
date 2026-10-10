@@ -26,7 +26,7 @@ jobs:
       REPO: BetterAudio
       BUNDLE_ID: pro.betteraudio.BetterAudio
       TEAM_ID: N529W98U62
-      PINNED_PUBLIC_KEY: duIBPTDie9dBTKqijWVxsVHZ89AMuorAz04gF6K+TUQ=
+      PINNED_PUBLIC_KEY: tGlx5EiGZGSdyhw+mjTKroh0cwJ7sZw0yvhDrnV1kag=
     steps:
       - name: Download release assets
         env:
