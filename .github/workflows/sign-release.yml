@@ -22,7 +22,7 @@ permissions:
 
 jobs:
   sign:
-    runs-on: macos-14
+    runs-on: macos-15
     env:
       OWNER: rokartur
       REPO: BetterAudio
@@ -30,6 +30,12 @@ jobs:
       TEAM_ID: N529W98U62
       PINNED_PUBLIC_KEY: tGlx5EiGZGSdyhw+mjTKroh0cwJ7sZw0yvhDrnV1kag=
     steps:
+      - name: Select Xcode 16 (Swift 6 toolchain)
+        # BetterUpdater's Package.swift declares swift-tools-version 6.0; the runner's default is 5.10.
+        uses: maxim-lobanov/setup-xcode@ed7a3b1fda3918c0306d1b724322adc0b8cc0a90 # v1.7.0
+        with:
+          xcode-version: latest-stable
+
       - name: Download release assets
         env:
           GH_TOKEN: ${{ github.token }}
