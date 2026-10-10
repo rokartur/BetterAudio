@@ -1,0 +1,78 @@
+# BetterAudio release signing — COPY THIS to the RELEASE repo:
+#   rokartur/BetterAudio  ->  .github/workflows/sign-release.yml
+# (Releases live in rokartur/BetterAudio, separate from this source repo.)
+#
+# Setup: add secret BETTERUPDATER_PRIVATE_KEY in rokartur/BetterAudio
+# (base64 Ed25519 private key whose PUBLIC half is pinned in BetterAudioApp).
+#
+# Decoupled from the build: triggers on release publish and signs whatever
+# .dmg/.zip assets are attached. Runs alongside the existing
+# update-homebrew-cask.yml.
+
+name: sign-release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  sign:
+    runs-on: macos-14
+    env:
+      OWNER: rokartur
+      REPO: BetterAudio
+      BUNDLE_ID: pro.betteraudio.BetterAudio
+      TEAM_ID: N529W98U62
+      PINNED_PUBLIC_KEY: duIBPTDie9dBTKqijWVxsVHZ89AMuorAz04gF6K+TUQ=
+    steps:
+      - name: Download release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p dist
+          gh release download "${GITHUB_REF_NAME}" \
+            --repo "${{ github.repository }}" \
+            --pattern '*.dmg' --pattern '*.zip' --dir dist
+          ls -la dist
+
+      - name: Build betterupdater CLI
+        run: |
+          # Same tag and revision as BetterUpdater in apps/BetterAudio.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved,
+          # so the signer matches the app's verifier; the revision check stops a moved tag from reaching the private key.
+          git clone --depth 1 --branch 0.2.3 https://github.com/rokartur/BetterUpdater.git /tmp/betterupdater
+          test "$(git -C /tmp/betterupdater rev-parse HEAD)" = 3b52fae17c64c9ee36a8f2669bb3c62b32929628
+          (cd /tmp/betterupdater && swift build -c release --product betterupdater)
+          echo "BU=/tmp/betterupdater/.build/release/betterupdater" >> "$GITHUB_ENV"
+
+      - name: Sign manifest
+        env:
+          BETTERUPDATER_PRIVATE_KEY: ${{ secrets.BETTERUPDATER_PRIVATE_KEY }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          ASSETS=$(printf -- '--asset %s ' dist/*.dmg dist/*.zip 2>/dev/null)
+          "$BU" sign \
+            --owner "$OWNER" --repo "$REPO" \
+            --bundle-id "$BUNDLE_ID" --team-id "$TEAM_ID" \
+            --version "$VERSION" \
+            $ASSETS \
+            --out dist/betterupdater-manifest.json
+
+      - name: Verify before upload (fail-closed guard)
+        run: |
+          ASSETS=$(printf -- '--asset %s ' dist/*.dmg dist/*.zip 2>/dev/null)
+          "$BU" verify \
+            --public-key "$PINNED_PUBLIC_KEY" \
+            --manifest dist/betterupdater-manifest.json \
+            $ASSETS
+
+      - name: Upload manifest + signature to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${GITHUB_REF_NAME}" \
+            dist/betterupdater-manifest.json \
+            dist/betterupdater-manifest.json.sig \
+            --repo "${{ github.repository }}" --clobber
