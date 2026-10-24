@@ -50,8 +50,8 @@ jobs:
         run: |
           # Same tag and revision as BetterUpdater in apps/BetterAudio.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved,
           # so the signer matches the app's verifier; the revision check stops a moved tag from reaching the private key.
-          git clone --depth 1 --branch 0.2.3 https://github.com/rokartur/BetterUpdater.git /tmp/betterupdater
-          test "$(git -C /tmp/betterupdater rev-parse HEAD)" = 3b52fae17c64c9ee36a8f2669bb3c62b32929628
+          git clone --depth 1 --branch 0.2.8 https://github.com/rokartur/BetterUpdater.git /tmp/betterupdater
+          test "$(git -C /tmp/betterupdater rev-parse HEAD)" = f3a73ecfdc44641f2c8c638e2d95eb2907302f49
           (cd /tmp/betterupdater && swift build -c release --product betterupdater)
           echo "BU=/tmp/betterupdater/.build/release/betterupdater" >> "$GITHUB_ENV"
 
